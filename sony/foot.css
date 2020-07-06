@@ -1,0 +1,127 @@
+ /* 底部 */
+.foot {
+    width: 100%;
+    background-color: rgb(31,32,36);
+}
+
+.foot1 {
+    padding-bottom: 50px;
+    display: flex;
+}
+.foot1 ul:nth-of-type(1) {
+    flex-grow: 3;
+}
+.foot1 ul:not(:nth-of-type(1)) {
+    flex-grow: 1;
+}
+.foot1 ul:nth-of-type(5) {
+    flex-grow: 0;
+}
+.foot1 ul li:first-child {
+    font-size: 20px;
+    color: #999;
+    line-height: 60px;
+}
+.foot1 ul li:not(:first-child) a{
+    color: white;
+    font-size: 15px;
+    line-height: 25px;
+}
+.foot1 ul li a:hover {
+    color: rgb(1, 160, 249);
+}
+.guanzhu {
+    margin-top: 30px;
+}
+.weixin,
+.weibo {
+    margin: 8px 0;
+    width: 180px;
+    height: 50px;
+    background-color: #999;
+    text-align: center;
+    line-height: 50px;
+    color: #e4e1e1;
+}
+.weibo:hover,
+.weixin:hover {
+    background-color: rgb(1, 160, 249);
+}
+ /* 底部协议 */
+
+.xieyi {
+    display: flex;
+}
+.top {
+    line-height: 60px;
+}
+.top span {
+    margin-left: 30px;
+}
+.top .jin {
+    margin: 0 20px 0 30px;
+}
+.top img {
+    vertical-align: middle;
+}
+.left {
+    flex-grow: 4;
+}
+.bottom {
+    color: #ccc;
+}
+.bottom a {
+    color: #ccc;
+    margin-right: 20px;
+}
+.top a:hover,
+.bottom a:hover {
+    color: white;
+}
+.right {
+    margin-top: 30px;
+    width: 180px;
+    height: 40px;
+    display: flex;
+    line-height: 80px;
+}
+.right div {
+    flex-grow: 1;
+    background-image: url(./img/301.gif);
+}
+.box1:hover {
+    background-position: 0 -40px ;
+}
+.box2 {
+    background-position: -35px 0 ;
+}
+.box2:hover {
+    background-position: -35px -40px;
+}
+.box3 {
+    background-position: -68px 0 ;
+}
+.box3:hover {
+    background-position: -68px -40px;
+}
+.box4 {
+    background-position: -101px 0 ;
+}
+.box4:hover {
+    background-position: -101px -40px;
+}
+.box5 {
+    background-position: -135px 0 ;
+}
+.box5:hover {
+    background-position: -135px -40px;
+}
+.jiankong {
+    text-align: center;
+    line-height: 50px;
+    padding-bottom: 30px;
+}
+.jiankong a {
+    color: #999;
+    text-decoration: underline;
+}
