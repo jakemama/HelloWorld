@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.w {
+    width: 1140px;
+    margin: 0 auto;
+    overflow: auto;
+}
+a {
+    text-decoration: none;
+    
+}
+.bs:hover {
+    color: #15c388;
+}
+.top-nav {
+    width: 500px;
+    height: 80px;
+    line-height: 80px;
+    float: left;
+}
+.logo {
+    height: 80px;
+    float: left;
+}
+.top-nav ul {
+    float: left;
+}
+.top-nav ul li {
+    float: left;
+    margin-left: 35px;
+    
+    list-style: none;
+}
+.top-nav ul li a {
+    line-height: 80px ;
+    color: gray;
+}
+.top-log {
+    float: right;
+    width: 200px;
+    height: 80px;   
+}
+.top-log div{
+    float: left;
+    color: #15c388;
+    cursor: pointer;
+    line-height: 80px;
+    
+}
+.tlog-1 {
+    margin-right: 20px;
+}
+.banner {
+    background: url(11.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 420px;
+    margin-bottom: 60px;
+}
+.banner-word {
+    width: 260px;
+    height: 220px;
+    position: relative;
+    top: 25%;
+    left: 70%;
+}
+.bw-top {
+    width: 100%;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.bwt-1 {
+    height: 20px;
+    width: 200px;
+    margin: 15px auto;
+    text-align: left;
+    color: white;
+}
+.bwt-1 span {
+    color: #fc7b53;
+
+}
+.bwt-2 {
+    width: 200;
+    height: 50px;
+
+}
+.bwt-2 div {
+    float: left;
+}
+.bwt-21 {
+    width: 145px;
+    height: 60px;
+    font-weight: 900;
+    text-align: right;
+    line-height: 60px;
+    font-size: 50px;
+    color: white;
+}
+.bwt-22 {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.bw-down {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    background-color: #fc7b53;
+    border-radius: 40px ;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.hcalss-left {
+    background: url(1.jpg) no-repeat center/cover;
+    width: 560px;
+    height: 320px;
+    margin-top: 10px;
+    color: white;
+    float: left;
+    text-align:center;
+}
+.hl-word {
+    width: 300px;
+    height: 105px;
+    margin: 70px auto 0;
+    font-weight: 700;
+    color: white;
+    border: white 2px solid;
+    text-align: center;
+    line-height: 105px;
+}
+.hcalss-right {
+    background: url(3.jpg) no-repeat center/cover;
+    width: 560px;
+    height: 320px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    float: right;
+}
+.class {
+    width: 265px;
+    height: 300px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 60px;
+    
+}
+.class div p {
+    font-size: 12px;
+    color: gray;
+}
+.join {
+    width: 240px;
+    height: 40px;
+    margin: 10px auto;
+    background-color: #15c388;
+    border-radius: 5px ;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.banji {
+    width: 70px;
+    height: 50px;
+    position: relative;;
+    top: -306px;
+    left: 0;
+}
+.author {
+    width: 360px;
+    height: 145px;
+    float: left;
+    margin-right: 18px;
+    border: #ccc 1px solid;
+    overflow: hidden;
+}
+.au {
+
+}
+.au-left {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background: url(7.png) no-repeat center/cover;
+}
+.au-right {
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin: 20px 10px ;
+}
+.au-right p {
+    color: #15c388;
+    line-height: 35px;
+    
+}
+.au-right div {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #fc7b53;
+    color: white;
+    cursor: pointer;
+}
+.au-right span {
+    line-height: 35px;
+    color: gray;
+
+}
+.more {
+    width: 100%;
+    height: 40px;
+    clear: both;
+}
+.more div {
+    width: 90px;
+    height: 30px;
+    float: right;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 20px;
+    border: gray 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.foot {
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    background-color:#515151;
+}
+.foot-logo {
+    float: left;
+    margin-top: 30px; 
+    width: 250px;
+    height: 60px;
+}
+.foot-mid {
+    width: 340px;
+    height: 60px;
+    margin: 35px auto;
+    text-align: center;
+}
+.foot-mid p {
+    color: gray;
+    font-size: smaller;
+}
+.foot-mid ul li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+.foot-mid ul li a {
+    color: white;
+}
+.foot-bottom ul li {
+    list-style: none;
+    float: left;
+    margin-top: 5px;
+    font-size: smaller;
+    margin-right: 19px;
+    color: gray;
+    margin-bottom: 10px;
+}
+.foot-bottom ul li a {
+    color:gray;
+    
+}
+.foot-bottom p {
+    font-size: smaller;
+    color:gray;
+    
+}
+
