@@ -1,0 +1,252 @@
+body {
+    color: #666;
+}
+.bb60px {
+    width: 60px;
+    height: 3px;
+    background-color: yellow;
+    margin: 0 auto;
+}
+.h {
+    display: inline-block;
+    width: 800px;
+}
+.body {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -2;
+    background-image: url(../img/body.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+/* 页眉 */
+.header1 {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    color: #000;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 2;
+}
+.header1 img {
+    margin-right: 50px;
+}
+.header1 dl dd {
+    float: left;
+    margin-left: 50px;
+    padding-bottom: 18px;
+}
+.header1 dl dd:hover {
+    border-bottom: 3px solid blue;
+    cursor: pointer;
+    color: yellow;
+}
+.header1 dl dd p {
+    font-size: 25px;
+    transition: all .3s;
+}
+.header1 dl dd span {
+    display: block;
+    font-size: 20px;
+    transition: all .3s;
+}
+.header1 dl dd:hover .header1p {
+    transform: translate(0, 30px);
+}
+.header1 dl dd:hover .header1span {
+    transform: translate(0, -30px);
+}
+/* 页眉轮播图 */
+.header2 {
+    width: 1600px;
+    height: 595px;
+    margin-top: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+.header2 .header2img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+/* 页面内容第一行 */
+.nav1 {
+    width: 100%;
+    height: 700px;
+    background-color: #fff;
+    border-top: 1px solid #000;
+    text-align: center;
+    color: #000;
+    line-height: 66px;
+    position: relative;
+}
+.nav1h2 {
+    display: inline-block;
+    width: 600px;
+    height: 60px;
+    font-size: 45px;
+    color: #000;
+}
+.navspan {
+    font-size: 30px;
+    border-bottom: 2px solid #000;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+.nav1p1 {
+    font-size: 25px;
+    font-weight: 900;
+}
+.nav1 dl {
+    width: 800px;
+    color: #000;
+}
+.nav1 dl dd {
+    float: left;
+    margin-right: 244px;
+}
+.nav1 dl dd p {
+    font-size: 40px;
+}
+.nav1 dl dd span {
+    font-size: 18px;
+    border: 0;
+}
+.nav1 dl dd:last-child {
+    margin-right: 0;
+}
+.nav1 img {
+    display: block;
+    margin: 20px auto;
+}
+.navinput {
+    width: 200px;
+    height: 70px;
+    border: 5px solid yellow;
+    color: yellow;
+    font-size: 20px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -100px;
+}
+/* 页面内容第二行 */
+.nav2 {
+    width: 100%;
+    height: 2300px;
+    background-color: #fff;
+    border-top: 1px solid #000;
+    text-align: center;
+    color: #000;
+    position: relative;
+}
+.nav2 dl {
+    display: inline-block;
+    margin: 20px auto;
+}
+.nav2 dl dd {
+    width: 475px;
+    height: 475px;
+    background-color: yellow;
+    float: left;
+    margin: 0 5px 10px;
+    position: relative;
+}
+.nav2 dl dd img {
+    position: absolute;
+    left: 0;
+}
+.nav2 dd:hover .nav2img2 {
+    z-index: 1;
+    cursor: pointer;
+}
+/* 页面内容第三行 */
+.nav3 {
+    width: 100%;
+    height: 700px;
+    background-color: #fff;
+    border-top: 1px solid #000;
+    text-align: center;
+    color: #000;
+}
+.nav3 img {
+    display: block;
+    margin: 20px auto;
+}
+/* 页面内容第四行 */
+.nav4 {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid #000;
+    text-align: center;
+    line-height: 300px;
+    font-size: 25px;
+}
+/* 页面内容第五行 */
+.nav5 {
+    width: 100%;
+    height: 1200px;
+    background-color: #fff;
+    border-top: 1px solid #000;
+    text-align: center;
+    line-height: 50px;
+}
+.nav5img1 {
+    width: 450px;
+    height: 253px;
+    margin: 40px auto;
+    background-image: url(../img/232323232.webp);
+    position: relative;
+    font-size: 30px;
+}
+.nav5img1 span,
+.nav5img2 span {
+    margin: 90px 20px;
+    color: #fff;
+}
+.nav5img2 {
+    width: 450px;
+    height: 253px;
+    margin: 40px auto;
+    background-image: url(../img/34343434.webp);
+    position: relative;
+    font-size: 30px;
+}
+/* 页面内容第八行 */
+.nav6 {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    border-top: 1px solid #000;
+    text-align: center;
+    color: #000;
+    line-height: 66px;
+    position: relative;
+}
+/* 页脚 */
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(70, 70, 70);
+    text-align: center;
+    color: #fff;
+}
+.footer1 {
+    width: 100%;
+    height: 5px;
+    border-top: 1px solid rgb(70, 70, 70);
+    background-color: yellow;
+}
+/* 页面固定 */
+.fixed {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
