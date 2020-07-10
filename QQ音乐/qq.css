@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.w {
+    width: 1200px;
+    height: ;
+    margin: 0 auto;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+/* 所有的hover事件 */
+.bs:hover,
+.dl:hover {
+    color:#31c27c;  
+}
+/* 头部分的大盒子 */
+.top {
+    height: 142px;
+}
+/* 头部的导航第一行 */
+.top-1 {
+    height: 90px;
+    border-top: 1px solid #f2f2f2;
+}
+/* 头部第一行的导航栏 */
+.top-12 div {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    float: left;
+    line-height: 90px;
+    /* background-color: red; */
+    font-size: 20px;
+    font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+}
+/* 头部第二行大盒子 */
+.top-2 {
+    height: 41px;
+}
+/* 插入的logo图片 */
+.logo{
+    margin-top: 20px;
+    width: 170px;
+    height: 46px;
+    display: inline-block;
+    float: left;
+}
+/* 导航栏第一个音乐馆设置 */
+#target {
+    background-color:  #31c27c;
+    
+    margin-left: 20px;
+    width: 94px;
+    cursor: pointer;
+}
+/* 音乐馆字体设置 */
+#target a {
+    color: #fff ;
+}
+/* 输入框外的盒子设置 */
+.top-13 {
+    width: 220px;
+    height: 64px;
+    padding: 25px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+/* 输入框设置 */
+.top-131 {
+    width: 171px;
+    height: 33px;
+    display: inline-block;
+}
+/* 第一行最右部分大盒子 */
+.top-14 {
+    display: inline-block;
+    width: 264px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+}
+/* 最右大盒子各小盒子设置 */
+.top-14 div {
+    display: inline-block;
+    /* margin-left: 10px; */
+    font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+}
+/* 登录按钮 */
+.t-141 {
+    width: 38px;
+    height: 90px;
+    font-size: 16px;
+    margin: 0 10px 0 0;
+}
+/* 开会员按钮 */
+.t-142 {
+    width: 111px;
+    height: 38px;
+    line-height: 38px;
+    /* margin: 24px 0 0 10px;
+    padding: 0 9px; */
+    
+    background-color: #31c27c;
+}
+
+.t-142 a{
+    color: #fff;
+    font-size: 13px;
+}
+/* 开付费包 */
+.t-143 {
+    width: 85px;
+    height: 38px;
+    line-height: 38px;
+    /* margin: 24px 0 0 10px;
+    padding: 0 9px; */
+    font-size: 13px;
+    border: #c9c9c9 1px solid;
+}
+/* 导航第二栏 */
+.top-2 {
+    width: 800px;
+    /* width: 100%; */
+    height: 52px;
+    margin: 0 auto;
+    /* background-color: #ccc; */
+}
+.t-2 {
+    list-style: none;
+    display: inline-block;
+}
+.t-2 li {
+    float: left;
+    display: inline-block;
+    margin-right: 45px;
+    line-height: 52px;
+}
+#tar {
+    color: #31c27c;
+}
+/* 第二部分 */
+.p-2 {
+    width: 100%;
+    height: 532px;
+    background-color: #ccc;
+}
+/* 歌单推荐 */
+.p-21 {
+    width: 100%;
+    height: 114px;
+    text-align: center;
+    /* line-height: 100px ; */
+    /* margin: 0 auto; */
+}
+.p-21 h2 {
+   display: block;
+   margin: 0 auto;
+   width: 196px;
+   height: 114px;
+    font-size: 32px;
+    font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+    line-height: 114px;
+    font-weight: 600;
+}
+.p-22 {
+    margin: 0 auto 30px auto;
+    text-align: center;
+    width: 650px;
+    height: 50px;
+}
+
+/* 第二部分歌单图片设置 */
+.p-23 li {
+    float: left;
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 52px;
+}
+.p2-img {
+    width: 220px;
+    height: 220px;
+}
+.p-3 {
+    width: 100%;
+    height: 556px;
+    background-color: #ffffff;
+}
+/* 第三部分歌单图片排版 */
+.t-3 {
+    list-style: none;
+    display: inline-block;
+}
+.t-3 li {
+    float: left;
+    display: inline-block;
+
+}
+.t-31 {
+    border-bottom: #ccc 1px solid;
+    width: 380px;
+    height: 111px;
+    margin-right: 20px;
+}
+.t-3 li div {
+    float: left;
+
+}
+
+.p3-img {
+    width: 86px;
+    height: 86px;
+}
+.t-3word {
+    margin: 15px 0 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height:10px ; */
+    font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+}
+.t-31 > .t-3right {
+    float: right;
+    line-height: 86px;
+    width: 39px;
+    height: 86px;
+    font-size: 14px;
+    color: #999999;
+}
+/* 第四部分-精彩推荐 */
+.p-4 {
+    width: 100%;
+    height: 418px;
+    background-color: #ccc;
+}
+.p4-img {
+    width: 100%;
+    height: 237px;
+}
+.p4-img img {
+    width: 587px;
+    height: 236px;
+    margin-right: 10px;
+}
+/* 第五部分-新碟首发 */
+.p-5 {
+    width: 100%;
+    height: 835px;
+    background-color: #fff;
+}
+.p-53 li{
+    float: left;
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 30px;
+    margin-bottom: 36px;
+}
+/* 第六部分-排行榜 */
+.p-6 {
+    width: 100%;
+    height: 680px;
+    background-color: #ccc;
+}
+.p-62 {
+    width: 100%;
+    
+
+}
+.p-62 ul li {
+    display: inline-block;
+    float: left;
+}
+.p6 {
+    width: 224px;
+    height: 550px;
+    /* text-align: center; */
+    background-image: url(pink.png);
+    overflow: hidden;
+}
+.p61 {
+    width: 200px;
+    height: 150px;
+    margin: 40px auto;
+    font-size: 26px;
+    font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+    color: #fff;
+    text-align: center;
+}
+/* .p62 ul li div {
+    width: 70px;
+
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    
+    font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+} */
+.p621 {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    
+}
+.p622 {
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    text-align: right;
+}
+.p623 {
+   
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+}
+
+/* 第七部分--MV */
+.p-7 {
+    width: 100%;
+    height: 660px;
+    background-color: #fff;
+
+}
+.p7-img {
+    width: 224px;
+    height: 126px;
+
+}
+.p-73 li {
+    float: left;
+    display: inline-block;
+    margin-right: 16px;
+    line-height: 20px;
+    margin-bottom: 36px;
+}
+.p-73 li div span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+}
+.p-73s {
+    color: #999999 !important;
+}
+
+/* 第八部分--底部 */
+.p-8 {
+    width: 100%;
+    height: 589px;
+    background-color: #333;
+}
