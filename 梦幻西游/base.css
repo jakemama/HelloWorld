@@ -1,0 +1,40 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+em,i {
+    font-style:normal;
+}
+li {
+    list-style:none;
+} 
+img {
+    border:0;
+    vertical-align:middle;
+}
+button {
+    cursor:pointer;
+}
+a {
+    
+    text-decoration:none;
+}
+
+button,
+input {
+    font-family:Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+    border: 0;
+    outline: 0;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?77y5v2');
+    src:  url('fonts/icomoon.eot?77y5v2#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?77y5v2') format('truetype'),
+      url('fonts/icomoon.woff?77y5v2') format('woff'),
+      url('fonts/icomoon.svg?77y5v2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
