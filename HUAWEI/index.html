@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUAWEI黑粉</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="animate.js"></script>
+
+    <script>
+        window.addEventListener('load', function(){
+            var arrow_l = document.querySelector('.arrow-l');
+            var arrow_r = document.querySelector('.arrow-r');
+            var focus = document.querySelector('.focus');
+            var focusWidth = focus.offsetWidth;             //获取轮播图宽度
+
+            //鼠标经过离开显示按钮
+            focus.addEventListener('mouseenter', function () {
+                arrow_l.style.display = 'block';
+                arrow_r.style.display = 'block';
+                
+                clearInterval(timer);
+                timer = null;
+            })
+            focus.addEventListener('mouseleave', function () {
+                arrow_l.style.display = 'none';
+                arrow_r.style.display = 'none';
+
+                timer = setInterval(function(){
+                arrow_r.click();
+                },2000)
+            })
+
+            //动态生成小圆圈及效果
+            var ul = focus.querySelector('ul');
+            var ol = focus.querySelector('.circle')
+
+            //给ol创建并加li元素，
+            for (var i = 0; i < ul.children.length; i++){
+                var li = document.createElement('li');
+                li.setAttribute('index',i);                         //为新建的li添加自定义属性：索引号
+                ol.appendChild(li);
+
+                li.addEventListener('click', function(){            //为加上的li循环注册点击事件
+                for (var i = 0; i < ol.children.length; i++){
+                    ol.children[i].className = '';                  //排他事件，消除所有的li的类名
+                }
+                    this.className = 'current';                     //为当前的点击li添加current类，变为实心
+
+                    var index = this.getAttribute('index');         //获取当前点击li的索引号
+                    num = circle = index;
+                    animate(ul, -index * focusWidth);               //为li添加动画
+                })
+            }
+            ol.children[0].className = 'current';
+           
+            var first = ul.children[0].cloneNode(true);             //复制第一个li加到最后，且因为不在加小圈圈的循环内不会有多余的圈圈 
+            ul.appendChild(first);  
+
+            var num = 0;
+            var circle = 0;
+            arrow_r.addEventListener('click', function(){           // 右箭头效果添加
+                if (num == ul.children.length - 1){
+                    ul.style.left = 0;
+                    num = 0;
+                }
+                num++;
+                
+                animate(ul, -num * focusWidth);
+
+                circle++;
+                if(circle == ol.children.length){
+                    circle = 0;
+                }
+                for (var i = 0; i < ol.children.length; i++){
+                    ol.children[i].className = '';  
+                }
+                ol.children[circle].className = 'current';  
+            })
+
+            arrow_l.addEventListener('click', function(){           // 左箭头效果添加
+                if (num == 0){
+                    ul.style.left = -(ol.children.length - 1) * focusWidth + 'px';
+                    num = ol.children.length - 1;
+                }
+                num--;
+                
+                animate(ul, - num * focusWidth);
+
+                circle--;
+                if(circle == -1 ){
+                    circle = ol.children.length - 1;
+                }
+                for (var i = 0; i < ol.children.length; i++){
+                    ol.children[i].className = '';  
+                }
+                ol.children[circle].className = 'current';  
+            })
+
+
+            var timer = setInterval(function(){
+                arrow_r.click();
+            },2000)
+
+        })
+    </script>
+</head>
+<body>
+    
+    <div class="top-nav">
+        
+            <div class="pull-right">
+                <a href="#" class="pr-1">
+                    集团网站
+
+                    <div class="top-nav-content">
+                        <dl>
+                            <dt><h3 class="hand">消费者服务网站</h3></dt>
+                            <dt><span class="hand">手机、平板和PC等智慧生活产品</span></dt>
+                        </dl>
+                        <dl>
+                            <dt><h3 class="hand">消费者服务网站</h3></dt>
+                            <dt><span class="hand">手机、平板和PC等智慧生活产品</span></dt>
+                        </dl>
+                        <dl>
+                            <dt><h3 class="hand">消费者服务网站</h3></dt>
+                            <dt><span class="hand">手机、平板和PC等智慧生活产品</span></dt>
+                        </dl>
+                        <dl>
+                            <dt><h3 class="hand">消费者服务网站</h3></dt>
+                            <dt><span class="hand">手机、平板和PC等智慧生活产品</span></dt>
+                        </dl>
+                        <dl>
+                            <dt><h3 class="hand">消费者服务网站</h3></dt>
+                            <dt><span class="hand">手机、平板和PC等智慧生活产品</span></dt>
+                        </dl>
+                    </div>
+                </a>
+                <a href="#" class="pr-1">
+                    集团网站
+                    <div class="top-nav-content">
+                        <dl>
+                            <dt><h3 class="hand">消费者服务网站</h3></dt>
+                            <dt><span class="hand">手机、平板和PC等智慧生活产品</span></dt>
+                        </dl>
+                        <dl>
+                            <dt><h3 class="hand">消费者服务网站</h3></dt>
+                            <dt><span class="hand">手机、平板和PC等智慧生活产品</span></dt>
+                        </dl>
+                        <dl>
+                            <dt><h3 class="hand">消费者服务网站</h3></dt>
+                            <dt><span class="hand">手机、平板和PC等智慧生活产品</span></dt>
+                        </dl>
+                        <dl>
+                            <dt><h3 class="hand">消费者服务网站</h3></dt>
+                            <dt><span class="hand">手机、平板和PC等智慧生活产品</span></dt>
+                        </dl>
+                        <dl>
+                            <dt><h3 class="hand">消费者服务网站</h3></dt>
+                            <dt><span class="hand">手机、平板和PC等智慧生活产品</span></dt>
+                        </dl>
+                    </div>
+                </a>
+                <a href="#" class="pr-1">
+                    集团网站
+                    <div class="top-nav-content">
+                        <dl>
+                            <dt><h3 class="hand">消费者服务网站</h3></dt>
+                            <dt><span class="hand">手机、平板和PC等智慧生活产品</span></dt>
+                        </dl>
+                        <dl>
+                            <dt><h3 class="hand">消费者服务网站</h3></dt>
+                            <dt><span class="hand">手机、平板和PC等智慧生活产品</span></dt>
+                        </dl>
+                        <dl>
+                            <dt><h3 class="hand">消费者服务网站</h3></dt>
+                            <dt><span class="hand">手机、平板和PC等智慧生活产品</span></dt>
+                        </dl>
+                        <dl>
+                            <dt><h3 class="hand">消费者服务网站</h3></dt>
+                            <dt><span class="hand">手机、平板和PC等智慧生活产品</span></dt>
+                        </dl>
+                        <dl>
+                            <dt><h3 class="hand">消费者服务网站</h3></dt>
+                            <dt><span class="hand">手机、平板和PC等智慧生活产品</span></dt>
+                        </dl>
+                    </div>
+                </a>
+ 
+            </div>
+    </div>
+
+    <div class="navbar w2">
+        <a href="#" class="navbar-img"><img src="img/huawei_logo.png" alt="huawei" width="130"></a>
+
+        <ul>
+            <li>个人及家庭产品</li>
+            <li>商用产品及方案</li>
+            <li>服务支持</li>
+            <li>合作伙伴与开发者</li>
+            <li>关于华为</li>
+            <!-- <div class="clear"></div> -->
+        </ul>
+
+        <div class="shop fr">
+            <span class="shopcar"> 在线购买</span>
+            <i></i>
+        </div>
+    </div>
+
+    <div class="focus">
+
+        <div class="arrow-l"></div>
+        <div class="arrow-r"></div>
+
+        <ul>
+            <li ><img src="img/banner1.jpg" alt="" width="1895"></li>
+            <li><img src="img/banner2.jpg" alt="" width="1895"></li>
+            <li ><img src="img/banner3.png" alt="" width="1895"></li>
+            
+        </ul>
+
+        
+        <ol class="circle">
+             
+        </ol>
+        
+        
+    </div>
+
+    <div class="recommend w2">
+        <h2>推荐信息</h2>
+
+    </div>
+
+    <div class="img-box w2">
+        <div class="big fl father">
+            <img src="img/big.jpg" alt="" height="446" class="scale">
+            <div class="mask">
+                <span>产品</span>
+                <h2>HUAWEI P40 Pro+ 超感知影像</h2>
+                <p>超感知徕卡五摄，100倍双目变焦</p>
+            </div>
+        </div>
+
+        <div class="small fr father">
+            <img src="img/small.jpg" alt="" width="446" class="scale">
+            <div class="mask">
+                <span>产品</span>
+                <h2>HUAWEI P40 Pro+ 超感知影像</h2>
+                <p>超感知徕卡五摄，100倍双目变焦</p>
+            </div>
+        </div>
+
+        <div class="small fl father">
+            <img src="img/small.jpg" alt="" width="446" class="scale">
+            <div class="mask">
+                <span>产品</span>
+                <h2>HUAWEI P40 Pro+ 超感知影像</h2>
+                <p>超感知徕卡五摄，100倍双目变焦</p>
+            </div>
+        </div>
+
+        <div class="big fr father">
+            <img src="img/big.jpg" alt="" height="446" class="scale">
+            <div class="mask">
+                <span>产品</span>
+                <h2>HUAWEI P40 Pro+ 超感知影像</h2>
+                <p>超感知徕卡五摄，100倍双目变焦</p>
+            </div>
+        </div>
+
+        <div class="big fl father">
+            <img src="img/big.jpg" alt="" height="446" class="scale">
+            <div class="mask">
+                <span>产品</span>
+                <h2>HUAWEI P40 Pro+ 超感知影像</h2>
+                <p>超感知徕卡五摄，100倍双目变焦</p>
+            </div>
+        </div>
+
+        <div class="small fr father">
+            <img src="img/small.jpg" alt="" width="446" class="scale">
+            <div class="mask">
+                <span>产品</span>
+                <h2>HUAWEI P40 Pro+ 超感知影像</h2>
+                <p>超感知徕卡五摄，100倍双目变焦</p>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+    <div class="video w1">
+        <video src="img/tiger-video2.mp4" autoplay = 'autoplay' loop = 'loop' muted ></video>
+
+        <div class="v-word">
+            <h2>用科技点亮东北虎豹回家路</h2>
+            <p>通信网络、红外相机、AI，科技助力濒危物种保护，东北虎豹国家公园重现勃勃生机</p>
+            <div class="more hand">了解更多</div>
+        </div>
+    </div>
+
+    <div class="recommend w2">
+        <h2>新闻与活动</h2>
+    </div>
+
+    <div class="row w2">
+        <div class="type fl">
+            <div class="imgbox father">
+                <img src="img/imgbox.jpg" alt="" width="447" class="scale">
+                <div class="hd">
+                    <span>展会活动</span>
+                </div>
+            </div>
+
+            <div class="type-word">
+                <h2 class="hand">2020 共赢未来全球线上峰会</h2>
+                <span> 线上直播</span><span> 2020年7月22-30日</span>
+                <br>
+                <p>与全球运营商、管制机构、合作伙伴、媒体、分析师等共同探讨ICT技术如何助力抗击疫情、复工复产，共克时艰，迎接更光明的未来！</p>
+            </div>
+        </div>
+
+        <div class="type fl">
+            <div class="imgbox father">
+                <img src="img/imgbox.jpg" alt="" width="447" class="scale">
+                <div class="hd">
+                    <span>展会活动</span>
+                </div>
+            </div>
+
+            <div class="type-word">
+                <h2 class="hand">2020 共赢未来全球线上峰会</h2>
+                <span> 线上直播</span><span> 2020年7月22-30日</span>
+                <br>
+                <p>与全球运营商、管制机构、合作伙伴、媒体、分析师等共同探讨ICT技术如何助力抗击疫情、复工复产，共克时艰，迎接更光明的未来！</p>
+            </div>
+        </div>
+
+        <div class="news fr">
+            <a href="#" class="new-a">
+                <h4 class="new-h">
+                    rain 联合华为发布非洲首个 5G 独立组网商用网络
+                </h4>
+                <div class="time">2020 年 07 月 19 日</div>
+            </a>
+
+            <a href="#" class="new-a">
+                <h4 class="new-h">
+                    rain 联合华为发布非洲首个 5G 独立组网商用网络
+                </h4>
+                <div class="time">2020 年 07 月 19 日</div>
+            </a>
+
+            <a href="#" class="new-a">
+                <h4 class="new-h">
+                    rain 联合华为发布非洲首个 5G 独立组网商用网络
+                </h4>
+                <div class="time">2020 年 07 月 19 日</div>
+            </a>
+
+            <a href="#" class="new-a">
+                <h4 class="new-h">
+                    rain 联合华为发布非洲首个 5G 独立组网商用网络
+                </h4>
+                <div class="time">2020 年 07 月 19 日</div>
+            </a>
+
+            <a href="#" class="new-a">
+                <h4 class="new-h">
+                    rain 联合华为发布非洲首个 5G 独立组网商用网络
+                </h4>
+                <div class="time">2020 年 07 月 19 日</div>
+            </a>
+
+            <a href="#" class="new-a">
+                <h4 class="new-h">
+                    rain 联合华为发布非洲首个 5G 独立组网商用网络
+                </h4>
+                <div class="time">2020 年 07 月 19 日</div>
+            </a>
+
+            <a href="#" class="new-a">
+                <h4 class="new-h">
+                    rain 联合华为发布非洲首个 5G 独立组网商用网络
+                </h4>
+                <div class="time">2020 年 07 月 19 日</div>
+            </a>
+
+            <a href="#" class="new-a">
+                <h4 class="new-h">
+                    rain 联合华为发布非洲首个 5G 独立组网商用网络
+                </h4>
+                <div class="time">2020 年 07 月 19 日</div>
+            </a>
+
+            
+
+            <div class="hd">
+                <span>新闻</span>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+    
+    <footer >
+        <div class="top-line w2">
+            首页
+            <span class="fr hand"></span>
+        </div>
+
+        <div class="list w2">
+            <ul>
+                <li class="first">关于华为</li>
+                <li>公司简介</li>
+                <li>公司年报</li>
+                <li>公司治理</li>
+                <li>管理层信息</li>
+                <li>华为招聘</li>
+               
+            </ul>
+
+            <ul>
+                <li class="first"></li>
+                <li>公司简介</li>
+                <li>公司年报</li>
+                <li>公司治理</li>
+                <li>管理层信息</li>
+                <li>华为招聘</li>
+                
+            </ul>
+
+            <ul>
+                <li class="first">关于华为</li>
+                <li>公司简介</li>
+                <li>公司年报</li>
+                <li>公司治理</li>
+                
+                <li>华为招聘</li>
+                <li>联系我们</li>
+            </ul>
+
+            <ul>
+                <li class="first">关于华为</li>
+                <li>公司简介</li>
+                <li>公司年报</li>
+                <li>公司治理</li>
+               
+                <li>华为招聘</li>
+                <li>联系我们</li>
+            </ul>
+
+            <ul>
+                <li class="first">关于华为</li>
+                <li>公司简介</li>
+                <li>公司年报</li>
+                <li>公司治理</li>
+                
+                
+            </ul>
+
+            <ul>
+                <li class="first">关于华为</li>
+                <li>公司简介</li>
+                <li>公司年报</li>
+                <li>公司治理</li>
+               
+                <li>华为招聘</li>
+                <li>联系我们</li>
+            </ul>
+
+            <div class="clear"></div>
+        </div>
+
+        <div class="end w2">
+            <ul>
+                <li>华为商城</li>
+                <li>华为云</li>
+                <li>华为智能光伏</li>
+                <li>产品定义社区</li>
+                <li>华为心声社区</li>
+                <li>荣耀官网</li>
+            </ul>
+
+            <div class="clear"></div>
+        </div>
+    </footer>
+</body>
+</html>
