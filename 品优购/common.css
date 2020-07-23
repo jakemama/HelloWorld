@@ -1,0 +1,269 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+    /* overflow: auto; */
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?9ejmco');
+    src:  url('fonts/icomoon.eot?9ejmco#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?9ejmco') format('truetype'),
+      url('fonts/icomoon.woff?9ejmco') format('woff'),
+      url('fonts/icomoon.svg?9ejmco#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.shortcut {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f1f1f1;
+}
+.shortcut li {
+    float: left;
+}
+.style_red {
+    color: #c81623;
+}
+.fr ul li:nth-child(even) {
+    margin: 0 15px 0 ;
+}
+.arrow-icon::after{
+    content: "";
+    font-family: 'icomoon';
+    margin-left: 6px;
+}
+.header {
+    position: relative;
+    height: 105px;
+
+}
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 175px;
+    height: 56px;
+    /* background-color: pink; */
+}
+.logo a {
+    display: block;
+    font-size: 0;
+    width: 175px;
+    height: 56px;
+    background: url(img/logo.png) no-repeat center/cover;
+}
+.search {
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+.search input {
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+.search button {
+    float: left;
+    width: 80px;
+    height: 32px;
+    background-color: #b1191a;
+    color: white;
+    font-size: 16px;
+}
+.hotword {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+.hotword a {
+    margin: 0 10px;
+}
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+}
+.shopcar::before {
+    content: "";
+    font-family: "icomoon";
+    color: #c81623;
+}
+.shopcar::after {
+    content: "";
+    font-family: "icomoon";
+
+}
+.count {
+    position: absolute;
+    top:-5px;
+    left: 105px;
+    height: 14px;
+    line-height: 14px ;
+    background-color: #e60012;
+    color: #ffffff;
+    padding: 0 5px;
+    border-radius: 7px 7px 7px 0;
+}
+.nav {
+    height: 47px;
+    width: 100%;
+    margin-top: 2px;
+    border-bottom: #b1191a 2px solid;
+}
+.nav .dropdown {
+    width: 210px;
+    height: 45px;
+    float: left;
+    background-color: #b1191a ;
+    
+    text-align: center;
+}
+.nav .navitems {
+    float: left;
+}
+.dropdown .dt {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+}
+.dropdown .dd {
+    /* display: none; */
+    width: 210px;
+    height: 465px;
+    background-color: #c81623;
+
+
+}
+.dropdown .dd ul li {
+    height: 31px;
+    text-align: left;
+    line-height: 31px;
+    margin-left: 2px;
+    padding-left: 10px;
+}
+.dropdown .dd ul li::after {
+    content: "";
+    font-family: "icomoon";
+    color: #fff;
+    float: right;
+    font-size: larger;
+    margin-right: 5px;
+}
+.dropdown .dd ul li:hover {
+    background-color: #fff;
+    
+}
+.dropdown .dd ul li a {
+    font-size: 14px;
+    color: white;
+
+}
+.dropdown .dd ul li:hover a {
+    color: #c81623;
+}
+.navitems ul li {
+    float: left;
+}
+.navitems ul li a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 30px;
+}
+.footer {
+    width: 100%;
+    height: 415px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+.service {
+    height: 80px;
+    border-bottom: 1px solid #cccccc;
+}
+.service ul li {
+    width: 300px;
+    height: 50px;
+    float: left;
+    padding-left: 35px;
+}
+.service ul li h5 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    background: url(img/icons.png);
+    background-position: -252px -3px;
+    font-size: 0;
+}
+.service_txt h4{
+    font-size: 14px;
+}
+.service_txt p {
+    font-size: 12px;
+}
+.help {
+    height: 185px;
+    border-bottom: 1px solid #cccccc;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.help dl {
+    float: left;
+    width: 200px;
+}
+.help dl:last-child {
+    width: 90px;
+    text-align: center;
+}
+.help dl dt {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.help dl dd {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.copyright {
+    text-align: center;
+}
+.copyright ul {
+    margin: 10px auto 0;
+    width: 800px;
+    height: 35px;
+    text-align: center;
+}
+.copyright ul li {
+    float: left;
+    font-size: 12px;
+    color: #666666;
+    margin-right: 5px;
+}
+.copyright p {
+    /* display: block; */
+    font-size: 12px;
+    /* margin-top: 10px; */
+}
+.little {
+    font-size: 12px;
+}

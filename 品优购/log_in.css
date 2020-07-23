@@ -1,0 +1,98 @@
+.top {
+    height: 80px;
+    border-bottom: 1px solid #c40000;
+}
+.top img {
+    margin-top: 10px;
+}
+.log {
+    height: 40px;
+    background-color: #ececec;
+
+}
+.log-left {
+    float: left;
+    color: #666666;
+    margin-left: 10px;
+    line-height: 40px;
+}
+.log-right {
+    float: right;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    color: #666666;
+    margin-right: 10px;
+}
+.log-right a {
+    color: #c40000;
+}
+input[type^=number] {
+    width: 240px;
+    height: 37px;
+}
+.table {
+    height: 480px;
+    text-align: center;
+    padding-top: 20px;
+    border: #666666 1px solid;
+}
+.table div {
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+.table span {
+    color: #c40000;
+}
+.table i {
+    color: green;
+}
+.left {
+    text-align: left;
+    position: relative;
+    left: 100px;
+}
+.right {
+    text-align: right;
+    position: relative;
+    left: 100px;
+}
+.safe {
+    position: relative;
+    right: 280px;
+}
+p a {
+    color: skyblue;
+}
+.submit {
+    width: 200px !important;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    background-color: #c40000;
+    cursor: pointer;
+}
+.foot {
+    margin: 20px auto;
+    text-align: center;
+}
+.foot p {
+    font-size:12px;
+    color: #666666;
+}
+ul {
+    margin: 0 auto;
+    width: 800px;
+    height: 35px;
+    text-align: center;
+}
+li {
+    float: left;
+    font-size: 12px;
+    color: #666666;
+    margin-right: 5px;
+    
+}

@@ -1,0 +1,70 @@
+.kill {
+    position: absolute;
+    top: 45px;
+    left: 185px;
+    width: 90px;
+    height: 35px;
+    padding: 0 15px ;
+    border-left: 2px solid #c81523;
+}
+.dd {
+    display: none !important;
+}
+.sk-bd ul li {
+    width: 300px;
+    height: 500px;
+    float: left;
+    text-align: center;
+}
+.sk-bd ul li p{
+    text-align: left;
+    font-size: 12px;
+}
+.price {
+    text-align: left;
+    margin-top: 10px;
+}
+.price span {
+    color: #c81523;
+    font-size: 20px;
+}
+.price i {
+    color: #a4a4a4;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.sell p{
+    display: inline-block;
+    margin-top: 20px;
+}
+.out {
+    display: inline-block;
+    width: 140px;
+    height: 13px;
+    border: #c81523 1px solid;
+    border-radius: 10px;
+}
+.in {
+    width: 70%;
+    height: 100%;
+    background-color: #c81523;
+}
+.action {
+    width: 100%;
+    height: 0px;
+    line-height: 30px;
+    color: white;
+    background-color:#c81523;
+    /* display: none; */
+    transition: all 1s;
+}
+.sk-bd li:hover .action {
+    width: 100%; 
+    height: 30px; 
+    display: block;
+}
+.sk-bd li:hover .bd-img img {
+    width: 270px;
+    transition: all 1s;
+}

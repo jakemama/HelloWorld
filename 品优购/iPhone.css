@@ -1,0 +1,191 @@
+.dd {
+    display: none !important;
+}
+.iphone {
+    height: 635px;
+
+}
+.iphone-img {
+    width: 450px;
+    float: left;
+    text-align: left;
+}
+.iphone-img p {
+    line-height: 45px;
+    font-style: 10px;
+    color: #cccccc;
+}
+.p-border {
+    border: 2px solid #cccccc;
+}
+.iphone-img ul li {
+    width: 60px;
+    height: 55px;
+    float: left;
+    
+    line-height: 55px;
+}
+.iphone-detail {
+    width: 720px;
+    float: left;
+}
+.price {
+    position: relative;
+    width: 720px;
+    height: 138px;
+    padding: 20px 10px;
+    background-color: #fee9eb;
+}
+.price table tr td span {
+    font-size: 20px;
+
+}
+.price table tr td p {
+    color: white;
+    background-color:red;
+    width: 50px;
+    height: 22px;
+    display: inline-block;
+    /* line-height: 35px; */
+}
+.row1 {
+    display: inline-block;
+    width: 50px;
+    line-height: 35px;
+}
+.pj {
+    position: absolute;
+    top:20px;
+    right: 5px;
+}
+.iphone-type {
+    width: 720px;
+    
+    padding: 20px 10px;   
+}
+.blo {
+    display: inline-block;
+    width: 83px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    background-color: #f7f7f7;
+}
+.join-shopcar {
+    height: 50px;
+}
+.join-shopcar input{
+    display: inline-block;
+    width: 55px; 
+    height:50px;
+    float: left;
+    margin-right: 10px;
+    border: #cccccc 1px solid;
+}
+.join {
+    width: 140px;
+    height: 50px;
+    float: left;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:#c81623 ;
+}
+.p-nav {
+    height: 1850px;
+    
+}
+
+.nav-left {
+    width: 210px;
+    height: 35px;
+    display: inline-block;
+    float: left;
+    background-color: #f1f1f1;
+}
+.nav-left a {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+.nav-left:hover .l-list {
+    display: block;
+}
+.l-list {
+    width: 210px;
+    border: #cccccc 1px solid;
+    border-top: 0;
+    display: none;
+}
+.l-list ul li:nth-child(even) {
+    width: 187px;
+    height: 0;
+    margin: 0 auto;
+    border: #cccccc 1px solid;
+}
+.list-1 {
+    /* text-align: center; */
+}
+.list-1 h3 {
+    text-align: left;
+}
+.list-car {
+    color: #000000;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin: 10px auto;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.nav-right {
+    width: 970px;
+    height: 35px;
+    float: right;
+    display: inline-block;
+    background-color: #f1f1f1;
+}
+.nav-right a {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+.nav-right a:first-child {
+    color: white;
+    background-color: #c81623;
+}
+.detail {
+    position: relative;
+    width: 970px;
+    /* height: 2000px; */
+    float: right;
+    text-align: left;
+    padding-top: 20px;
+    line-height: 20px;
+    text-indent: 2em;
+    margin-bottom: 50px;
+}
+
+.loc {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    font-weight: 600;
+}
+.d-img {
+    width: 970px;
+    text-align: center;
+    float: right;
+}
+
+
+
+
