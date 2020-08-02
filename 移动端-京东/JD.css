@@ -1,0 +1,165 @@
+body {
+    max-width: 1080px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+div {
+    box-sizing: border-box;
+}
+.hand {
+    cursor: pointer;
+}
+.red:hover {
+    color: #a01e14;
+}
+
+.search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    z-index: 100;
+    background-color: #e43130;
+}
+.s-1 {
+    flex: 10%;
+    height: 44px;
+    margin: 0 10px;
+    background: url(img/s-1.png) no-repeat center;
+}
+.s-2 {
+    flex: 10%;
+    height: 44px;
+    line-height: 44px;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+}
+.search-box {
+    display: flex;
+    justify-content: center;
+    flex: 80%;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#jd-logo {
+    
+    margin-left: 5px;
+    width: 40px;
+    height: 30px;
+    background: url(img/s-2.png) center no-repeat;
+}
+#fdj {
+    width: 40px;
+    height: 30px;
+    margin-left: 5px;
+    background: url(img/jd-sprites.png) no-repeat;
+    background-position: -164px 0px;
+}
+#s-box {
+    /* padding-left: 80px; */
+    width: 80%;
+    height: 30px;
+    border: none;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    /* height: 538px; */
+    height: 14rem;
+    
+    background: url(img/banner.png) center no-repeat;
+}
+.banner img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    border-radius: 10px;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 12rem;
+    margin-top: 5rem;
+}
+.nav-1 {
+    width: 20%;
+    height: 6rem;
+    background: url(img/nav-1.png) center/cover no-repeat;
+}
+.miaosha {
+    width: 100%;
+    height: 5rem;
+    margin-top: 1rem;
+}
+.miaosha img {
+    width: 100%;
+}
+.xiaoyuan {
+    width: 100%;
+    height: 12rem;
+    margin-top: 9rem;
+}
+.xiaoyuan img {
+    width: 100%;
+}
+
+#commonNav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    font-size: 16px;
+}
+#commonNav > a {
+    position: relative;
+    width: 20%;
+    height: 2.8em;
+    box-sizing: border-box;
+    float: left;
+    font-size: 16px;
+    background-color: transparent;
+    text-align: center;
+}
+#commonNav .icon-center {
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    width: .0625em;
+    height: .0625em;
+    background-color: transparent;
+    z-index: 1;
+}
+#commonNav .icon-center img {
+    position: absolute;
+    left: -2rem;
+    bottom: 0;
+    z-index: 1;
+    width: 3.6em;
+}
