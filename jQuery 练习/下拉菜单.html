@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下拉菜单</title>
+
+    <script src="jQuery.min.js"></script>
+</head>
+<style>
+    .nav>li{
+        text-decoration: none;
+        float: left;
+        width: 100px;
+        border: 1px #ccc solid;
+    }
+    .xl {
+        display: none;
+        width: 100px;
+    }
+</style>
+<body>
+    <ul class="nav">
+        <li>
+            <a href="#">diyijie</a>
+            <ul class="xl">
+                <li>123</li>
+                <li>456</li>
+                <li>789</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">dierjie</a>
+            <ul class="xl">
+                <li>123</li>
+                <li>456</li>
+                <li>789</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">disanjie</a>
+            <ul class="xl">
+                <li>123</li>
+                <li>456</li>
+                <li>789</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">disijie</a>
+            <ul class="xl">
+                <li>123</li>
+                <li>456</li>
+                <li>789</li>
+            </ul>
+        </li>
+  
+        
+    </ul>
+
+    <script>
+        $(function(){
+            $('.nav>li').mouseover(function() {
+                $(this).children('ul').show();
+            })
+
+            $('.nav>li').mouseout(function() {
+                $(this).children('ul').hide();
+            })
+        })
+    </script>
+</body>
+</html>
