@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS第2天作业</title>
+</head>
+<body>
+    <script>
+        // 第1题：用户输入一个数字，然后判断这个数字能否被5、6整除，根据情况弹出下面4种警告框：
+        var j1 = prompt('请输入一个数字');
+        if(j1 % 5 ==0 && j1 % 6 ==0 ){
+            alert('这个数可以被5和6整除');
+        }else if(j1 % 5 ==0){
+            alert('这个数可以被5整除,但不能被6整除');
+        }else if(j1 % 6 ==0){
+            alert('这个数可以被6整除,但不能被5整除');
+        }else{
+            alert('这个数既不能被6整除,也不能被5整除');
+        }
+
+        // 第2题 ：找出1~1000之中，所有能被5整除，或者被6整除的数字。在控制台输出。
+        for (let i = 1; i < 1000; i++) {
+            if(i % 5 ==0 || i % 6 ==0 ){
+                console.log(i);
+            }
+        }
+
+        // 第3题：用户输入一个数字，列出所有它能够整除的数字。
+        var j3 = prompt('请输入一个数字');
+        for (let i = 0; i <= j3; i++) {
+             if(j3 % i == 0){
+                 console.log(i);
+             }
+        }
+
+
+
+
+    </script>
+</body>
+</html>

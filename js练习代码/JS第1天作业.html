@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript基础班第1天作业</title>
+</head>
+<body>
+    <script>
+        // 1.用JS计算下列算式，并将结果在控制台输出：
+        var j1 = (123+45*78)/(34+543)-9*(324-34);
+        console.log(j1);
+
+        // 2.世界上表示气温有两种方法：摄氏度和华氏度。两者的关系是：
+        var j2 = prompt('请输入摄氏度');
+        console.log('对应的华氏度为：' + (9*j2/5 + 32));
+
+        // 3.用JS计算下列算式，并将结果在控制台输出：
+        console.log(Math.pow((23 + Math.pow(5,7))/45,2));
+
+        // 4.编写程序，提示用户输入六边形的边长，然后显示它的面积，计算六边形面积的公式是：
+        var j3 = prompt('请输入六边形边长');
+        console.log('六边形的面积为：' + (3*Math.sqrt(3)/2*Math.pow(j3,2)));
+
+        // 5） 【难度★★★★】如果今天是星期六，那么1000天后是星期几？用一条语句计算出来。
+        var arr1 = ['星期一','星期二','星期三','星期四','星期五','星期六','星期日']
+        console.log(arr1[1005%7]);
+
+        // 6） 【难度★★★★★】用户输入一个三位数，用程序计算三位数字的和。
+        var j6 = prompt('请输入三个数');
+        sum =Number(j6.charAt(0)) + Number(j6.charAt(1)) + Number(j6.charAt(2)) ;
+        console.log(sum);
+
+    </script>
+</body>
+</html>
